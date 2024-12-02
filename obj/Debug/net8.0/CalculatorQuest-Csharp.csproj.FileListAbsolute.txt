@@ -1,0 +1,4 @@
+C:\Users\maxim\CalculatorQuest-Csharp\obj\Debug\net8.0\CalculatorQuest-Csharp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\maxim\CalculatorQuest-Csharp\obj\Debug\net8.0\CalculatorQuest-Csharp.AssemblyInfoInputs.cache
+C:\Users\maxim\CalculatorQuest-Csharp\obj\Debug\net8.0\CalculatorQuest-Csharp.AssemblyInfo.cs
+C:\Users\maxim\CalculatorQuest-Csharp\obj\Debug\net8.0\CalculatorQuest-Csharp.csproj.CoreCompileInputs.cache

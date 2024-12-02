@@ -1,0 +1,64 @@
+﻿<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="300" d:DesignHeight="600"
+        x:Class="CalculatorQuest.CalculatorScreen"
+        Title="CalculatorScreen">
+
+    <StackPanel Margin="20" HorizontalAlignment="Center" VerticalAlignment="Center">
+        
+        <TextBlock HorizontalAlignment="Center" FontWeight="Heavy" Margin="0,0,0,20" > </TextBlock>
+            
+            <StackPanel>
+                <Label HorizontalAlignment="Right" x:Name="SavedNumber" > </Label>
+                <Label x:Name="Operation"> </Label>
+                <Label HorizontalAlignment="Right" x:Name="Numero" Margin="0,40,0,10" VerticalAlignment="Bottom"> </Label>
+            </StackPanel>
+        
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+            
+            <Button Content="C" Click="C_Button_Click" Margin="2" Name="ClearAll" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Row="0" Grid.Column="0" Width="77" Height="47" Foreground="Goldenrod" Background="LightGray"/>
+            <Button Content="CE" Click="Control_OnClick" Margin="2" Name="ClearEntry" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Row="0" Grid.Column="1" Width="77" Height="47" Foreground="White" Background="LightGray"/>
+            <Button Content="←" Click="Del_Button_Click" Margin="2" Name="Del" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Row="0" Grid.Column="2" Width="77" Height="47" Foreground="Navy" Background="LightGray"/>
+            
+            <Button Content="%" Click="Operator_OnClick" Margin="2" Name="Mod" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Row="1" Grid.Column="0" Width="77" Height="47" Foreground="Goldenrod" Background="LightGray"/>
+            <Button Content="/" Click="Operator_OnClick" Margin="2" Name="Divide" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Row="1" Grid.Column="1" Width="77" Height="47" Foreground="White" Background="LightGray"/>
+            <Button Content="x" Click="Operator_OnClick" Margin="2" Name="Multiply" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Row="1" Grid.Column="2" Width="77" Height="47" Foreground="Navy" Background="LightGray"/>
+            
+            <Button Content="+/-" Click="Operator_OnClick" Margin="2" Name="Sign" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Row="2" Grid.Column="0" Width="77" Height="47" Foreground="Goldenrod" Background="LightGray"/>
+            <Button Content="+" Click="Operator_OnClick" Margin="2" Name="More" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Row="2" Grid.Column="1" Width="77" Height="47" Foreground="White" Background="LightGray"/>
+            <Button Content="-" Click="Operator_OnClick" Margin="2" Name="Less" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Row="2" Grid.Column="2" Width="77" Height="47" Foreground="Navy" Background="LightGray"/>
+            
+            <Button Content="1" Click="Number_OnClick" Margin="2" Name="One" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Row="3" Grid.Column="0" Width="77" Height="47" Foreground="Goldenrod" Background="LightGray"/>
+            <Button Content="2" Click="Number_OnClick" Margin="2" Name="Two" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Row="3" Grid.Column="1" Width="77" Height="47" Foreground="White" Background="LightGray"/>
+            <Button Content="3" Click="Number_OnClick" Margin="2" Name="Three" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Row="3" Grid.Column="2" Width="77" Height="47" Foreground="Navy" Background="LightGray"/>
+            
+            <Button Content="4" Click="Number_OnClick" Margin="2" Name="Four" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Row="4" Grid.Column="0" Width="77" Height="47" Foreground="Goldenrod" Background="LightGray"/>
+            <Button Content="5" Click="Number_OnClick" Margin="2" Name="Five" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Row="4" Grid.Column="1" Width="77" Height="47" Foreground="White" Background="LightGray"/>
+            <Button Content="6" Click="Number_OnClick" Margin="2" Name="Six" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Row="4" Grid.Column="2" Width="77" Height="47" Foreground="Navy" Background="LightGray"/>
+            
+            <Button Content="7" Click="Number_OnClick" Margin="2" Name="Seven" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Row="5" Grid.Column="0" Width="77" Height="47" Foreground="Goldenrod" Background="LightGray"/>
+            <Button Content="8" Click="Number_OnClick" Margin="2" Name="Eight" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Row="5" Grid.Column="1" Width="77" Height="47" Foreground="White" Background="LightGray"/>
+            <Button Content="9" Click="Number_OnClick" Margin="2" Name="Nine" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Row="5" Grid.Column="2" Width="77" Height="47" Foreground="Navy" Background="LightGray"/>
+            
+            <Button Content="." Click="Number_OnClick" Margin="2" Name="Point" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Row="6" Grid.Column="0" Width="77" Height="47" Foreground="Goldenrod" Background="LightGray"/>
+            <Button Content="0" Click="Number_OnClick" Margin="2" Name="Zero" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Row="6" Grid.Column="1" Width="77" Height="47" Foreground="White" Background="LightGray"/>
+            <Button Content="=" Click="EqualButton_Click" Margin="2" Name="Equal" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Row="6" Grid.Column="2" Width="77" Height="47" Foreground="Navy" Background="LightGray"/>
+        </Grid>
+    </StackPanel>
+</Window>
